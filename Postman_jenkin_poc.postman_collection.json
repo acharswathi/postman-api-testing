@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "9087e837-fe15-4089-a3f6-39a4108eb65e",
+		"name": "Postman_jenkin_poc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " https://www.cuemath.com/login/",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a3b63dfd-d629-4776-82a7-595cd83d135f",
+						"exec": [
+							"//pm.globals.set(\"otp is\", \"8466\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"action\": \"validate_otp\", \n\"phone\": \"9953114188\",\n\"otp\": \"8466\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://leap-teacher.cuemath.com/api/v1/login/",
+					"protocol": "https",
+					"host": [
+						"leap-teacher",
+						"cuemath",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " https://www.cuemath.com/login/",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4d89cd8f-5127-46a8-8d3f-d6ead32535c6",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"action\": \"get_otp\", \"phone\": \"9953114188\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://leap-teacher.cuemath.com/api/v1/login/",
+					"protocol": "https",
+					"host": [
+						"leap-teacher",
+						"cuemath",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
