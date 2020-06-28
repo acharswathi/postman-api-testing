@@ -4,7 +4,7 @@
   "description": "Project for strong postman Tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api_test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Swathi",
   "license": "ISC",
